@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    body.light & {
+        color: #6b6b6b;
+    }
+}
+
+a:hover {
+    color: #bbbbbb;
+    body.light & {
+        color: #0061d5;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #040402;
+    color: #f5f5f5;
+}
+
+section {
+    padding: 90px 0;
+    text-align: center;
+    background: #040402;
+    transition: all ease .5s;
+    body.light &#about,
+    body.light &#services,
+    body.light &#portfolio,
+    body.light &#contact {
+        background: #f3f3f3;
+    }
+    @media(max-width: 1024px) {
+        padding: 75px 0;
+    }
+    @media(max-width: 767px) {
+        padding: 60px 0;
+    }
+}
+
+.container {
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section__title {
+    color: #f5f5f5;
+    font-size: 35px;
+    margin-bottom: 30px;
+    body.light & {
+        color: #0061d5;
+    }
+    @media(max-width: 1024px) {
+        font-size: 25px;
+    }
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 5px;
+    background: #0061d5;
+    margin: 10px auto 40px;
+    @media(max-width: 1024px) {
+        width: 110px;
+        height: 3px;
+    }
+}
+
+.section__subtitle {
+    color: #8e8e8e;
+    margin-bottom: 20px;
+    @media(max-width: 1024px) {
+        font-weight: normal;
+    }
+}
+
+.buttons__container {
+    display: flex;
+}
+
+.button {
+    background: #191919;
+    color: #f5f5f5;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: auto;
+    body.light & {
+        color: #fff;
+    }
+}
+
+.button:hover {
+    color: #0061d5;
+}
+
+.button--cta {
+    background: #0061d5;
+    color: #191919;
+    padding: 5px 30px;
+    display: inline-block;
+    margin: 20px auto;
+    body.light & {
+        color: #fff;
+    }
+    @media(max-width: 1024px) {
+        margin-bottom: 30px;
+    }
+}
+
+.button--cta i {
+    margin-right: 10px;
+}
+
+.button--cta:hover {
+    background: #f5f5f5;
+    color: #191919;
+}

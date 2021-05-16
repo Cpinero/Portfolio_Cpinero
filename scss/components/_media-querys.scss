@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .visible {
+        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .services__grid,
+    .portfolio__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services__grid,
+    .portfolio__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

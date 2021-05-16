@@ -1,0 +1,24 @@
+.contact__grid {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    @media(max-width: 767px) {
+        gap: 0;
+    }
+    .contact__item {
+        transition: all 0.3s;
+        @media(max-width: 767px) {
+            padding: 18px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        i {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            transition: all 0.3s;
+            color: #0061d5;
+        }
+    }
+}
