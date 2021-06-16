@@ -14,7 +14,6 @@
             object-fit: cover;
             display: block;
             transition: all 1s;
-            filter: grayscale(1);
         }
         .portfolio__description {
             padding: 50px;
@@ -34,7 +33,7 @@
                 opacity: 1;
             }
             .portfolio__description--title {
-                color: #0061d5;
+                color: #fff;
             }
             .portfolio__description--text {
                 margin: 20px 0;
