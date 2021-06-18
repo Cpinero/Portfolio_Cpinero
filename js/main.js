@@ -52,9 +52,6 @@ sections.forEach((section) => {
     observer.observe(section);
 });
 
-
-
-
 // Libreria ScrollReveal
 
 ScrollReveal().reveal(".navbar", { delay: 250 });
@@ -72,7 +69,6 @@ ScrollReveal().reveal(".skill__item", { delay: 450 });
 ScrollReveal().reveal(".services__item", { delay: 450 });
 ScrollReveal().reveal(".portfolio__item", { delay: 450 });
 ScrollReveal().reveal(".contact__item", { delay: 450 });
-//ScrollReveal().reveal(".footer", { delay: 450 });
 
 
 //Modo Oscuro
@@ -101,3 +97,29 @@ if (localStorage.getItem('light-mode') == 'true') {
     document.body.classList.remove('light');
     btnSwitch.classList.remove('switched');
 }
+
+
+// Vista de proyectos dinamico con Muuri
+const grid = new Muuri('.grid', {
+    layout: {
+        rounding: false
+    }
+});
+
+// al cargar la pagina reseteamos la vista de los elementos
+window.addEventListener('load', () => {
+    grid.refreshItems().layout();
+    //agregamos los listener de los enlaces para filtrar por categoria
+    const enlaces = document.querySelectorAll('#categorias a');
+
+    enlaces.forEach((elemento) => {
+        elemento.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('#categorias a.activo').classList.remove('activo');
+            e.target.classList.add('activo');
+
+            const categoria = e.target.innerHTML.toLowerCase();
+            categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
+        });
+    });
+});
