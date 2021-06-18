@@ -10,6 +10,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    .item {
+        width: calc(50% - 20px);
+    }
 }
 
 @media (max-width: 767px) {
@@ -17,5 +20,8 @@
     .portfolio__grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .item {
+        width: calc(100% - 20px);
     }
 }

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/dea9f052e6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>César Piñero | Desarrollador Web</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__logo">
+                <p class="navbar__title">
+                    <a href="index.html#home">Cpinero</a>
+                </p>
+            </div>
+            <div class="navbar__menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar__links">
+                <li class="navbar__link active" data-ref="home">
+                    <a href="index.html#home">Inicio</a>
+                </li>
+                <li class="navbar__link" data-ref="about">
+                    <a href="index.html#about">Acerca de </a>
+                </li>
+                <li class="navbar__link" data-ref="services">
+                    <a href="index.html#services">Servicios</a>
+                </li>
+                <li class="navbar__link" data-ref="portfolio">
+                    <a href="#portfolio">Portafolio</a>
+                </li>
+                <li class="navbar__link" data-ref="contact">
+                    <a href="#contact">Contacto</a>
+                </li>
+                <li class="navbar__link">
+                    <button class="switch" id="switch">
+                        <span><i class="fas fa-sun"></i></span>
+                        <span><i class="fas fa-moon"></i></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Portafolio</h2>
+            <div class="section__categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Angular</a>
+                <a href="#">HTML/CSS/JS</a>
+                <a href="#">FrontendMentor</a>
+                <a href="#">Components</a>
+            </div>
+            <div class="grid">
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/tasty.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Landing Page Restaurant</h3>
+                                <p class="portfolio__description--text"> HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Landing_Restaurant" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Landing_Restaurant" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="angular">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/pelis.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">PelisApp</h3>
+                                <p class="portfolio__description--text">Angular</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://buscadorpelicula.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Angular_App-Peliculas" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/pepsi.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Header Pepsi</h3>
+                                <p class="portfolio__description--text">
+                                    HTML, SASS, JS
+                                </p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Pepsi_Landing_Page/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Pepsi_Landing_Page" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/sidebard.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Sidebar Dashboard</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/sidebar_dashboard/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/sidebar_dashboard" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/card_product.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Hover Card Product</h3>
+                                <p class="portfolio__description--text">HTML, SASS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Card_products_headphones/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Card_products_headphones" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/card_shoes.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Hover Card Product Shoes</h3>
+                                <p class="portfolio__description--text">HTML, SASS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Card_products_shoes/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Card_products_shoes" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/icon_social.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Hover Social Icon</h3>
+                                <p class="portfolio__description--text">HTML, SASS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/iconos_redes_component_2/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/iconos_redes_component_2" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/card_toggle.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Card Dark Mode</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Card_Toggle/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Card_Toggle" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/header_pink.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Header Pink</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Header_Pink/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Header_Pink" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="frontendmentor">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/grid.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Testimonial Grid</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Testimonial-Grid_Frontendmentor/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Testimonial-Grid_Frontendmentor" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="components">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/hover-icon.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Hover Social Icon</h3>
+                                <p class="portfolio__description--text">HTML, SASS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/iconos_redes_component/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/iconos_redes_component" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/portfolio_filter.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Portfolio Dinamico</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Portfolio_dinamico/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Header_Pink" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/portfolio_bootstrap.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Portfolio Plantilla</h3>
+                                <p class="portfolio__description--text">HTML, BOOTSTRAP, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Practica_Portfolio/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Practica_Portfolio" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/dashboard.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Plantilla Dashboard</h3>
+                                <p class="portfolio__description--text">HTML, BOOTSTRAP, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Plantilla_Dashboard/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Plantilla_Dashboard" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/celeste.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Restaurante Celeste Imperio</h3>
+                                <p class="portfolio__description--text">HTML, BOOTSTRAP, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Celeste_imperio/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Celeste_imperio" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/asturias.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Movimiento Asturias</h3>
+                                <p class="portfolio__description--text">HTML, BOOTSTRAP, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Movimiento_asturias/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Movimiento_asturias" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="html/css/js">
+                    <div class="item-content">
+                        <div class="portfolio__item">
+                            <img class="portfolio__img" alt="portfolio item" src="./img/portfolio.png" />
+                            <div class="portfolio__description">
+                                <h3 class="portfolio__description--title">Portafolio</h3>
+                                <p class="portfolio__description--text">HTML, SASS, JS</p>
+                                <div class="buttons__container">
+                                    <a class="button" href="https://cpinero.github.io/Movimiento_asturias" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-desktop"></i> Live
+                                    </a>
+                                    <a class="button" href="https://github.com/Cpinero/Portfolio_Cpinero" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <h3 class="section__subtitle">
+                Siempre disponible para trabajos autónomos si se presenta el proyecto adecuado.
+                <br /> ¡No dude en ponerse en contacto conmigo!
+            </h3>
+            <div class="contact__grid">
+                <a href="mailto:cesarpinero2009@hotmail.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/Cpinero" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/cesar-pi%C3%B1ero-590b4813b/" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Copyright © 2021. <a href="https://www.linkedin.com/in/cesar-pi%C3%B1ero-590b4813b/" target="_blank">César Piñero</a> <br /> All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.4/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script async src="js/main.js"></script>
+</body>
+
+</html>
